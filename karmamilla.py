@@ -62,26 +62,3 @@ for student in students.keys():
         performance = "Needs Improvement"
     else:
         performance = "Poor"
-
-    # Step 6: Certificate eligibility
-    if score >= 2:
-        certificate = "Eligible for Certificate"
-    else:
-        certificate = "Not Eligible for Certificate"
-
-    # Step 7: Represtent result
-    print(f"Score: {score}")
-    print(f"Performance Level: {performance}")
-    print(f"Certificate Status: {certificate}")
-
-    # Warning for score 0
-    if score == 0:
-        print(" Warning: Score is 0!")
-
-    # Step 8: Pattern printing
-    print("Pattern:")
-    if score > 0:
-        for i in range(score):
-            print("*" * (i + 1))
-    else:
-        print("")  # Blank for score 0
